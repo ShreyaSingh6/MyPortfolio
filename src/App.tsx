@@ -3,36 +3,35 @@ import { Github, Linkedin, Mail, ExternalLink, Terminal, Blocks, User2, ArrowRig
 
 function App() {
   const projects = [{
+      title: "Portfolio (this)",
+      description: "A visually appealing portfolio website showcasing my skills and projects with an elegant design.",
+      image: "https://img.freepik.com/premium-vector/portfolio-creative-text-banner-with-black-background-illustration_755074-98.jpg?w=1060",
+      tags: ["React", "CSS","Javascript", "Bolt"],
+      link: "https://github.com/ShreyaSingh6/MyPortfolio"
+    },{
       title: "Face Emotion Detector",
       description: "Recognizes the human face and detects their emotion.",
-      image: "https://i0.wp.com/sefiks.com/wp-content/uploads/2018/01/kid-expressions-cover.png?resize=459%2C409&ssl=1",
+      image: "https://nevonprojects.com/wp-content/uploads/2021/05/nevon-face-emotion-detection-python-wt.jpg",
       tags: ["Python", "Open-CV", "Tensorflow"],
       link: "https://github.com/ShreyaSingh6/FaceEmotionDetector"
     },
     {
       title: "AssignEase",
       description: "An online assignment submission portal with chatbot",
-      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://media.licdn.com/dms/image/v2/D5612AQE5yxYksB44ew/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1727873019548?e=2147483647&v=beta&t=A0y0c26W7iR4RScu_koFl6klgSdItNCzOhe4O84-uCA",
       tags: ["HTML", "CSS", "JS", "Python-Django"],
       link: "https://github.com/ShreyaSingh6/AssignEase"
     },
     {
       title: "ArtBlend: Neural Style Transfer",
       description: "It uses Neural Style Transfer to create stunning artistic images by combining the content of one image with the style of another using PyTorch.",
-      image: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*lfRFNRZ9n-ss40dXwZOyBA.png",
+      image: "https://cdn.prod.website-files.com/645cec60ffb18d5ebb37da4b/66f1256e30a3a2b76da354eb_655e1faa338fad19ee0c2b64_studio_output.jpeg",
       tags: ["Python", "Matplotlib", "PyTorch", "Numpy"],
       link: "https://github.com/ShreyaSingh6/ArtBlend-Neural-Style-Transfer"
     },
-    {
-      title: "Portfolio (this)",
-      description: "A visually appealing portfolio website showcasing my skills and projects with an elegant design.",
-      image: "https://img.freepik.com/premium-vector/portfolio-creative-text-banner-with-black-background-illustration_755074-98.jpg?w=1060",
-      tags: ["React", "Javascript", "Bolt"],
-      link: "https://github.com/ShreyaSingh6/MyPortfolio"
-    }];
+    ];
 
   const handleResumeDownload = () => {
-    // Replace this URL with the actual URL of your resume file
     const resumeUrl = "https://drive.google.com/uc?export=download&id=1TL3mk1motLNnACZ4aQRpBnt_wMLs3m8t";
     const link = document.createElement('a');
     link.href = resumeUrl;
@@ -52,36 +51,27 @@ function App() {
           <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-blue-500/20 rounded-full blur-[120px]" />
         </div>
         
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-screen flex flex-col justify-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-screen flex flex-col justify-center items-center text-center">
           <div className="space-y-6 transform hover:translate-z-12 transition-transform duration-500">
             <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm transform hover:scale-105 transition-all">
               <Sparkles size={16} className="text-purple-400" />
               <span className="text-sm">Available for freelance work</span>
             </div>
-            <div className="flex items-center justify-between gap-8">
-              <div>
-                <h1 className="text-6xl sm:text-7xl font-bold tracking-tight mb-4">
-                  Shreya Singh
-                </h1>
-                <div className="flex items-center gap-4">
-                  <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
-                    Full Stack Developer
-                  </span>
-                </div>
-                <p className="text-xl text-gray-400 max-w-2xl mt-6">
-                  Building digital experiences that combine creativity with technical excellence. 
-                  Specializing in modern web technologies and interactive designs.
-                </p>
+            <div>
+              <h1 className="text-6xl sm:text-7xl font-bold tracking-tight mb-4">
+                Shreya Singh
+              </h1>
+              <div className="flex justify-center">
+                <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+                  Full Stack Developer
+                </span>
               </div>
-              <div className="hidden md:block">
-                <img
-                  src="https://drive.google.com/uc?export=view&id=1t9AsB_B8vSM7WlwWFOeRBkB_DP6Ez9hZ"
-                  alt="Shreya Singh"
-                  className="w-[300px] h-[300px] rounded-full object-cover border-4 border-purple-500/30 shadow-xl transform hover:scale-105 transition-all duration-300"
-                />
-              </div>
+              <p className="text-xl text-gray-400 max-w-2xl mt-6">
+                Building digital experiences that combine creativity with technical excellence. 
+                Specializing in modern web technologies and interactive designs.
+              </p>
             </div>
-            <div className="flex items-center space-x-6 pt-4">
+            <div className="flex items-center justify-center space-x-6 pt-4">
               {[
                 { icon: Github, href: "https://github.com/ShreyaSingh6", label: "GitHub" },
                 { icon: Linkedin, href: "https://www.linkedin.com/in/shreya-singh-740831259", label: "LinkedIn" },
@@ -102,6 +92,7 @@ function App() {
         </div>
       </section>
 
+      {/* Rest of the sections remain unchanged */}
       {/* Resume Section */}
       <section className="py-16 bg-neutral-900/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -122,9 +113,9 @@ function App() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-16">
             <Terminal className="text-purple-400" size={32} />
-            <h2 className="text-3xl font-bold">Selected Work</h2>
+            <h2 className="text-3xl font-bold">PROJECTS</h2>
           </div>
-
+          
           <div className="grid lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <div
@@ -171,7 +162,6 @@ function App() {
         </div>
       </section>
 
-      {/* Rest of the sections remain unchanged */}
       {/* Skills Section */}
       <section className="py-32 bg-black relative overflow-hidden">
         <div className="absolute inset-0">
@@ -180,9 +170,9 @@ function App() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="flex items-center gap-4 mb-16">
             <Blocks className="text-purple-400" size={32} />
-            <h2 className="text-3xl font-bold">Skills & Expertise</h2>
+            <h2 className="text-3xl font-bold">SKILLS & EXPERTISE</h2>
           </div>
-
+          
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -247,13 +237,17 @@ function App() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400">© 2024 All rights reserved.</p>
             <div className="flex items-center space-x-6">
-              {[Github, Linkedin, Mail].map((Icon, index) => (
+              {[
+                { icon: Github, href: "https://github.com/ShreyaSingh6" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/shreya-singh-740831259" },
+                { icon: Mail, href: "mailto:shreyasingh6515@gmail.com" }
+              ].map((item, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={item.href}
                   className="text-gray-400 hover:text-white transform hover:scale-110 hover:rotate-12 transition-all"
                 >
-                  <Icon size={20} />
+                  <item.icon size={20} />
                 </a>
               ))}
             </div>
