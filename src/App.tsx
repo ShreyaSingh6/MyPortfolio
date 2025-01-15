@@ -177,15 +177,15 @@ function App() {
             {[
               {
                 category: "Frontend",
-                skills: ["React Js", "HTML", "CSS", "Three.js"]
+                skills: ["React Js", "HTML", "CSS", "Javascript"]
               },
               {
                 category: "Backend",
-                skills: ["Node.js", "Python", "Django"]
+                skills: ["Node.js", "Python", "Django", "MySQL"]
               },
               {
                 category: "Tools & Others",
-                skills: ["MySQL", "Git", "GitHub", "Canva"]
+                skills: ["C", "Java", "GitHub", "Google Colab"]
               }
             ].map((category, index) => (
               <div
