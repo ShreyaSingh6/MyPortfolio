@@ -32,7 +32,7 @@ function App() {
     ];
 
   const handleResumeDownload = () => {
-    const resumeUrl = "https://drive.google.com/uc?export=download&id=1TL3mk1motLNnACZ4aQRpBnt_wMLs3m8t";
+    const resumeUrl = "https://drive.google.com/uc?export=download&id=1Joi_wawxpjzZko5KFNxObP2e01MJhtj4";
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = "Shreya_Singh_Resume.pdf";
